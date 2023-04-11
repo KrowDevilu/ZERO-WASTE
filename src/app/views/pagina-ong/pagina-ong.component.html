@@ -1,0 +1,113 @@
+<div class="box">
+  <div class="ONGinfo">
+    <a
+      href="/"
+      class="voltar"
+      style="  
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+      font-size: 20px;"
+    >
+      <
+    </a>
+    <h1>{{ solicitacoes[id].ong }}</h1>
+    <p style="color: #CBCBCB">Saiba mais sobre a ONG:</p>
+    <p>
+      {{ solicitacoes[id].descricao }}
+    </p>
+  </div>
+  <div class="heartContainer">
+    <input type="checkbox" id="heart" />
+    <label for="heart" id="fav"></label>
+  </div>
+  <p style="color: #D99D2A; margin-left: 40px; margin-right: 40px;">
+    Para doar basta verificar o endereço abaixo e enviar os alimentos
+    necessários para a ONG.
+  </p>
+  <div class="ONGlocal">
+    <p style="color: #CA262C">
+      Cidade: <span>{{ solicitacoes[id].local.cidade }}</span>
+    </p>
+    <p style="color: #CA262C">
+      Estado: <span>{{ solicitacoes[id].local.estado }}</span>
+    </p>
+    <p style="color: #CA262C">
+      Endereço: <span>{{ solicitacoes[id].local.endereco }}</span>
+    </p>
+  </div>
+  <h2 style="color: #D99D2A; font-weight: bold; text-align: center">
+    Alimentos que você pode doar:
+  </h2>
+  <div class="solicitacao" *ngFor="let alimento of solicitacoes[id].produto">
+    <div class="head">
+      <div id="info-detalhe">
+        <div id="info-icon">i</div>
+        <div id="detalhes">Detalhes</div>
+      </div>
+    </div>
+    <p>
+      Alimento: <span style="color: #CA262C">{{ alimento.nome }}</span>
+    </p>
+    <p>
+      Quantidade:
+      <span style="color: #CA262C">{{ alimento.quantidade }}KG</span>
+    </p>
+    <p style="color: #444444">
+      Solicitação realizada no dia: {{ alimento.data }}
+    </p>
+  </div>
+</div>
+
+<!-- <div class="box">
+  <div class="ONGinfo">
+    <a
+      href="/"
+      class="voltar"
+      style="  
+font-family: 'Courier New', Courier, monospace;
+color: white;
+"
+    >
+      <
+    </a>
+    <h1>Ong Mãos Solidárias</h1>
+    <p style="color: #CBCBCB">Saiba mais sobre a ONG:</p>
+    <p>
+      A ONG "Mãos Solidárias" foi fundada há mais de uma década por um grupo de
+      amigos que se comoveu com a situação de moradores de rua e famílias
+      carentes que viviam em situação de extrema pobreza em sua cidade. Eles
+      perceberam que muitas pessoas não tinham acesso a alimentos nutritivos e
+      saudáveis, o que impactava negativamente sua saúde e bem-estar.
+    </p>
+  </div>
+  <div class="heartContainer">
+    <input type="checkbox" id="heart" />
+    <label for="heart" id="fav"></label>
+  </div>
+  <p style="color: #D99D2A; margin-left: 40px; margin-right: 40px;">
+    Para doar basta verificar o endereço abaixo e enviar os alimentos
+    necessários para a ONG.
+  </p>
+  <div class="ONGlocal">
+    <p style="color: #CA262C">Cidade: <span>São paulo</span></p>
+    <p style="color: #CA262C">Estado: <span>SP</span></p>
+    <p style="color: #CA262C">Endereço: <span>Rua das amélias, 56</span></p>
+  </div>
+  <h2 style="color: #D99D2A; font-weight: bold; text-align: center">
+    Alimentos que você pode doar:
+  </h2>
+  <div class="solicitacao">
+    <div class="head">
+      <div id="info-detalhe">
+        <div id="info-icon">i</div>
+        <div id="detalhes">Detalhes</div>
+      </div>
+    </div>
+    <p>Alimento: <span style="color: #CA262C">Arroz</span></p>
+    <p>
+      Quantidade:
+      <span style="color: #CA262C">10KG</span>
+    </p>
+    <p style="color: #444444">Solicitação realizada no dia: 26/03/2023</p>
+  </div>
+</div> -->

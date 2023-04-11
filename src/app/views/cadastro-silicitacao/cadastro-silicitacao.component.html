@@ -1,0 +1,45 @@
+<div class="box">
+  <a
+    href="/"
+    class="voltar"
+    style="  
+    font-family: 'Courier New', Courier, monospace;
+    color: #d99d2a;
+    font-size: 20px;"
+  >
+    <
+  </a>
+  <h3>Inserir solicitação de doação</h3>
+  <h2>Do que sua ONG precisa?</h2>
+  <p>Somente é permitido o cadastro de alimentos não-perecíveis.</p>
+  <div class="form">
+    <div #container id="produtos">
+      <div class="produto" id="prod">
+        <div id="produto">
+          <label for="nomeProd">Produto</label>
+          <select name="nomeProd" class="nomeProduto">
+            <option value="">Selecione</option>
+            <option value="arroz">Arroz</option>
+            <option value="feijao">Feijão</option>
+            <option value="macarrao">Macarrão</option>
+            <option value="milho">Milho</option>
+          </select>
+        </div>
+        <div id="qntd">
+          <label for="qntdProduto">Quantidade</label>
+          <input type="number" class="qntdProduto" placeholder="KG" />
+        </div>
+      </div>
+    </div>
+
+    <button class="addProduto" (click)="createComponent()">
+      Adicionar Mais
+    </button>
+    <div id="send"><button class="finalizar" type="submit">Enviar</button></div>
+  </div>
+</div>
+
+<!-- <button id="cloneDiv">CLICK TO CLONE</button>
+
+<div id="klon1">klon1</div>
+<div id="klon2">klon2</div> -->

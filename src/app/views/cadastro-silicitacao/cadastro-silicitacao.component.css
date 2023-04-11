@@ -1,0 +1,63 @@
+/* section {
+  border: 1px solid #ddd;
+} */
+.box {
+  padding: 5px 10px;
+  background: border-box;
+}
+h3 {
+  color: #d99d2a;
+  font-weight: lighter;
+}
+h2 {
+  color: black;
+}
+.produto {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.produto label {
+  color: #d99d2a;
+}
+.produto input,
+.produto select {
+  border: #c6c6c6 1px solid;
+  border-radius: 10px;
+  height: 70%;
+  font-size: 15px;
+}
+
+#produto,
+#produto select {
+  width: 100%;
+}
+#qntd {
+  margin-left: 10px;
+  width: 20%;
+}
+#qntd input {
+  width: 100%;
+}
+.addProduto {
+  background-color: #ca262c;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#send {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.finalizar {
+  background-color: #8fb021;
+  border-radius: 10px;
+  max-width: 200px;
+  width: 50%;
+  justify-content: center;
+}
+.form {
+  width: 100%;
+}
